@@ -12,7 +12,7 @@ This project was completed by Reginah Shikanda and Sosthene Timi as part of the 
 * It handles command lines with arguments, handles the PATH, implements exit built-ins and handles comments.
 
 ## Simple Shell Compilation
-The Customised shell will compiled using gcc -Wall -Werror -Wextra -pedantic -std=gnu89 * .c hsh
+The Customised shell will be compiled using gcc -Wall -Werror -Wextra -pedantic -std=gnu89 * .c hsh
 
 ## Simple Shell Built-in Commands
 1. cd - command that changes directory
