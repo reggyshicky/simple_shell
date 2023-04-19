@@ -4,7 +4,7 @@
  * get_env - Getting contents of a global variable
  * @globvar: Variable whose value is to be retrieved
  *
- * Return: Pointer to glovar content, NULL if it fails
+ * Return: Pointer to globvar content, NULL if it fails
  */
 
 char *get_env(char *globvar)
