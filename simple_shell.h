@@ -10,7 +10,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <sys/weight.h>
+#include <sys/wait.h>
 #include <sys/types.h>
 extern char **environ;
 
