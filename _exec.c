@@ -24,14 +24,12 @@ int _exec(char **args)
 		{
 			exitstat = 126; /*means cmd couldn't be executed*/
 			perror("hsh");
-			exit(existat);
+			exit(exitstat);
 		}
 		exit(0);
 	}
 	else /*parent*/
-	{
 		wait(&stat_child); /*waits for child process to terminate*/
-		exitstat = WEXITSTATUS(stat_child);
-		return (exitstat);
-	}
+	exitstat = WEXITSTATUS(stat_child);
+	return (exitstat);
 }
