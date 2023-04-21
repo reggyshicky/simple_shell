@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	signed int bts_read = 0; /*return for getline() or bytes read*/
-	unsigned int buff_size = 0;
+	ssize_t bts_read = 0; /*return for getline() or bytes read*/
+	size_t buff_size = 0;
 	char *input = NULL, *args[25];
 	int index = 1, pathstat = 0, filestat = 0, execstat = 0, inbltstat = 0;
 
