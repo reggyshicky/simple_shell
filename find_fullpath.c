@@ -35,7 +35,7 @@ int find_fullpath(char **args)
 		n++;
 	}
 	n--;
-	if (file_existat == 0)
+	if (file_existstat == 0)
 	{
 		args[0] = path_candidates[n];
 		return (0);
