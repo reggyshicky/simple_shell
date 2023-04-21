@@ -18,6 +18,5 @@ int prompt_print(const char *prmpt, size_t size)
 		if (enter == -1)
 			return (-1);
 	}
-	else
-		return (0);
+	return (0);
 }
