@@ -28,7 +28,7 @@ char *str_dup(char *s)
 	m = 0;
 	while (m <= length)
 	{
-		dup_str(m) = s(m);
+		dup_str[m] = s[m];
 		m++;
 	}
 	return (dup_str);
