@@ -10,7 +10,7 @@
 char *get_env(char *globvar)
 {
 	int r = 0;
-	const char delim = "=";
+	const char delim[] = "=";
 	char *env_tkn;
 	char *env_dup;
 	char *env_tkndup;
