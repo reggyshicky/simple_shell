@@ -13,10 +13,12 @@ void control_c(int sig)
 /**
  * control_d - control D handler
  * @lines: users entry
+ * Return: 0 success
  */
-void control_d(char *lines)
+int control_d(char *lines)
 {
 	free(lines);
 	if (isatty(STDIN_FILENO) == 1)
 		write(STDOUT_FILENO, "\n", 1);
+	return (0);
 }
