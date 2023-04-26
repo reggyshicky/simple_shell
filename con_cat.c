@@ -1,4 +1,4 @@
-#include "simple_shell.H"
+#include "simple_shell.h"
 
 /**
  * con_cat - puts together 2 str
