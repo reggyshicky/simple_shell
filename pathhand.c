@@ -11,7 +11,7 @@ char *pathhand(char *s, char **env)
 {
 	char *cant, route;
 	path_t *lists, *temp;
-	struct status mk;
+	struct stat mk;
 
 	if (s == NULL || env == NULL || *env == NULL)
 		return (NULL);
