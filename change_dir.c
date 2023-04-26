@@ -32,7 +32,7 @@ int change_dir(char **arr, char **env)
 			return (0);
 		if (chdir(dir_new) == -1)
 		{
-			perror(array[0]);
+			perror(arr[0]);
 			write(STDERR_FILENO, "DIR cant be found\n", 18);
 		}
 		free(dir_new);
