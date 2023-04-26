@@ -23,7 +23,7 @@ char *con_cat(char *cat, char *s1, char *s2)
 
 	while (*(s2 + strindex) != '\0')
 	{
-		*(cat + catindex) - *(s2 + strindex);
+		*(cat + catindex) = *(s2 + strindex);
 		catindex++;
 		strindex++;
 	}
