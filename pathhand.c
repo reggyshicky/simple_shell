@@ -9,7 +9,7 @@
 
 char *pathhand(char *s, char **env)
 {
-	char *cant, route;
+	char *cant, *route;
 	path_t *lists, *temp;
 	struct stat mk;
 
