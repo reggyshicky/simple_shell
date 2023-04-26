@@ -1,4 +1,4 @@
-#include "simple_shell"
+#include "simple_shell.h"
 
 /**
  * exec_cmd - executes an input cmd
