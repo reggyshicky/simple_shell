@@ -12,23 +12,45 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <sys/types.h>
-extern char **environ;
 
-int _putchar(char c);
-int str_len(const char *s);
-int prompt_print(const char *prmpt, size_t size);
-char *get_env(char *globvar);
-int find_fullpath(char **args);
-int find_file(char *p_name);
-void memfree(char *element);
-int _exec(char **args);
+/**
+ * struct paths - structure for PATH variables
+ * @dir: directory to search
+ * @next: pointer to the next node
+ */
+
+typedef struct paths
+{
+	char *dir;
+	struct paths *next;
+} path_t;
+
 int str_cmp(char *s1, char *s2);
-int find_cmdinputs(char *element, char **args);
-int exit_args(char **args, int exit_status);
-void _gridfree(char **grid, int height);
 char *str_dup(char *s);
-int _errorstatus(int q);
-char *cmd_append(char *path_dir, char *cmd);
-int prnt_err(char **args, int tracker);
+char *rea_lloc(char *d);
+int atois(char *s);
+void list_free(path_t *h);
+void tkn_free(char **token_array);
+void control_c(int sig);
+void control_d(char *lines);
+int str_len(char *s);
+char *str_concat(char *s1, char *s2);
+char *con_cat(char *cat, char *s1, char *s2);
+int tens_point(int k, char *m);
+void free_everything(char *l, char *new_l, char **arr);
+char *_printint(int number);
+int change_dir(char **arr, char **env);
+int _env(char **env);
+int _exit(char **arr, char *l, char *new_l, int cmd_num);
+int inbuilts(char **arr, char **env, char *l, char *new_l, int cmd_num);
+void error_hand(char **argv, char **arr, int cmdnum, char *l, char *new_l);
+char *pathhand(char *s, char **env);
+char *get_env(const char *jina, char **env);
+path_t *appendnode(char *s, path_t *lists);
+path_t *develop_likedlist(char *s);
+int _putchar(char c);
+int exec_cmd(char **arr, char **env, char **v, char *l, char *new_l, int cmdn);
+void printprompt(void);
+char **str_tkn(char *l);
 
 #endif /*SIMPLE_SHELL_H*/
