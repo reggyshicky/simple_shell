@@ -10,8 +10,8 @@ char **str_tkn(char *l)
 {
 	int k = 0;
 	int tkn_index = 0;
-	char *tkn_arr;
-	char **tkn, *tkncpy;
+	char **tkn_arr;
+	char *tkn, *tkncpy;
 
 	if (l == NULL)
 		return (NULL);
@@ -43,4 +43,3 @@ char **str_tkn(char *l)
 	*(tkn_arr + k) = NULL;
 	return (tkn_arr);
 }
-
