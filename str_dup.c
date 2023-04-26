@@ -15,7 +15,6 @@ char *str_dup(char *s)
 
 	if (s == NULL)
 		return (NULL);
-	
 	length = 0;
 	while (s[length] != '\0')
 	{
