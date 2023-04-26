@@ -34,7 +34,7 @@ path_t *appendnode(char *s, path_t *lists)
 			directory[n] = '\0';
 			sup = k;
 			n = 0;
-			pointer->directory = directory;
+			pointer->dir = directory;
 			pointer = pointer->next;
 		}
 		else
