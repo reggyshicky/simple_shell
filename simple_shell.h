@@ -32,7 +32,7 @@ int atois(char *s);
 void list_free(path_t *h);
 void tkn_free(char **token_array);
 void control_c(int sig);
-void control_d(char *lines);
+int control_d(char *lines);
 int str_len(char *s);
 char *str_concat(char *s1, char *s2);
 char *con_cat(char *cat, char *s1, char *s2);
