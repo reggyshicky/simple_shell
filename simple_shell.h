@@ -41,7 +41,7 @@ void free_everything(char *l, char *new_l, char **arr);
 char *_printint(int number);
 int change_dir(char **arr, char **env);
 int _env(char **env);
-int _exit(char **arr, char *l, char *new_l, int cmd_num);
+int exit_shell(char **arr, char *l, char *new_l, int cmd_num);
 int inbuilts(char **arr, char **env, char *l, char *new_l, int cmd_num);
 void error_hand(char **argv, char **arr, int cmdnum, char *l, char *new_l);
 char *pathhand(char *s, char **env);
