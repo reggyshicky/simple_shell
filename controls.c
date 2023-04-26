@@ -7,18 +7,16 @@
 void control_c(int sig)
 {
 	(void)sig;
-	write(STDOUT_FILENO, "\n$ ", 3)
+	write(STDOUT_FILENO, "\n$ ", 3);
 }
 
 /**
  * control_d - control D handler
  * @lines: users entry
- * Return: 0 success
  */
 void control_d(char *lines)
 {
 	free(lines);
 	if (isatty(STDIN_FILENO) == 1)
 		write(STDOUT_FILENO, "\n", 1);
-	return (0);
 }
